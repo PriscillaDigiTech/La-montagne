@@ -46,6 +46,23 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.2s;
+
+    &:hover {
+      animation: animButton 1s infinite linear;
+
+      @keyframes animButton {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    }
   }
 
   nav {
